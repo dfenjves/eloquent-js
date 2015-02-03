@@ -2,7 +2,7 @@
 var word = "#";
 for (var i = 0; i < 6 ; i++) {
   console.log(word);
-  word = word + "#";
+  word += "#";
 };
 
 //Even simpler:
@@ -40,4 +40,14 @@ for (var i = 0; i < size; i++) {
   };
   board += "\n"
 };
-console.log(board)
+alert(board)
+//
+var excitingString = "Javascript is EleGQuent";
+for (var i = 0; i < excitingString.length; i++) {
+  var placeholder = excitingString.slice(-1);
+  excitingString = excitingString.slice(0,-1);
+  excitingString = placeholder + excitingString;
+  console.log(excitingString)
+};
+
+
